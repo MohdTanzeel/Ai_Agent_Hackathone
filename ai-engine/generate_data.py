@@ -1,18 +1,25 @@
-# First run: pip install oumi
-from oumi.builders import DataBuilder
+import json
 
 def generate_freelance_scenarios():
-    print("🤖 Oumi is synthesizing freelance scenarios...")
+    print("🤖 Synthesizing freelance scenarios...")
     
-    # This acts as your "Training Data" generator
+    # These are your "Few-Shot" examples for the AI
     scenarios = [
-        {"input": "Build me a clone of Facebook", "risk": "Extremely High", "price": "$100k+"},
-        {"input": "Simple portfolio website", "risk": "Low", "price": "$500"}
+        {
+            "input": "Build me a clone of Facebook", 
+            "risk": "Extremely High", 
+            "price": "$100k+",
+            "technical_needs": ["Graph Database", "Real-time Websockets", "CDN"]
+        },
+        {
+            "input": "Simple portfolio website", 
+            "risk": "Low", 
+            "price": "$500",
+            "technical_needs": ["Static Hosting", "Contact Form"]
+        }
     ]
     
-    # In a real usage, you use Oumi's models to generate 100s of these
-    # to train a model. For the hackathon, print them to show judges.
-    import json
+    # Save to file so Kestra can read it
     with open('training_data.json', 'w') as f:
         json.dump(scenarios, f, indent=2)
         
