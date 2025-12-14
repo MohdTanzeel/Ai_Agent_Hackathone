@@ -24,7 +24,8 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js feature<img width="1772" height="1076" alt="Screenshot 2025-12-14 at 7 57 44 PM" src="https://github.com/user-attachments/assets/3e5bd801-1fec-41a1-b82d-e2f92e355a7f" />
+s and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
@@ -36,5 +37,14 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 ## AI Integration
+<img width="1381" height="974" alt="Screenshot 2025-12-14 at 8 49 49 PM" src="https://github.com/user-attachments/assets/2b26db4c-efcc-4b87-852b-19167db3a479" />
 
 This project uses Kestra for orchestration and CodeRabbit for AI code reviews.
+<img width="1772" height="1076" alt="Screenshot 2025-12-14 at 7 57 44 PM" src="https://github.com/user-attachments/assets/18679199-94bb-45da-93cb-52027e8b9a75" />
+
+<img width="1782" height="1082" alt="Screenshot 2025-12-14 at 8 13 45 PM" src="https://github.com/user-attachments/assets/dfb82e0b-7db9-43e0-9c8d-a0762365aef3" />
+
+
+
+
+
