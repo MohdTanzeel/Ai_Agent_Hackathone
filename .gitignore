@@ -1,0 +1,5 @@
+ai-agent/node_modules/
+ai-agent/.next/
+ai-agent/out/
+.DS_Store
+
