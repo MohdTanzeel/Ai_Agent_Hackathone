@@ -1,0 +1,21 @@
+[
+  {
+    "input": "Build me a clone of Facebook",
+    "risk": "Extremely High",
+    "price": "$100k+",
+    "technical_needs": [
+      "Graph Database",
+      "Real-time Websockets",
+      "CDN"
+    ]
+  },
+  {
+    "input": "Simple portfolio website",
+    "risk": "Low",
+    "price": "$500",
+    "technical_needs": [
+      "Static Hosting",
+      "Contact Form"
+    ]
+  }
+]
