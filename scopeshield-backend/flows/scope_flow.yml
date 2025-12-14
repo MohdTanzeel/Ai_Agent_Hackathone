@@ -1,0 +1,24 @@
+id: scope-analysis
+namespace: hackathon
+description: Receives client request and returns scope
+tasks:
+  - id: analyze_request
+    type: io.kestra.plugin.core.log.Log
+    message: "Received request: {{ trigger.webhook.body.client_request }}"
+
+  # In a real step, you would put the LLM/Oumi call here.
+  # For the hackathon start, we mock the return to test the frontend connection.
+  - id: return_json
+    type: io.kestra.plugin.core.debug.Return
+    format: |
+      {
+        "project_name": "Calculated Scope for {{ trigger.webhook.body.client_request }}",
+        "price": "$5,000 - $8,000",
+        "risk": "High - Realtime Data required",
+        "status": "success"
+      }
+
+triggers:
+  - id: webhook
+    type: io.kestra.plugin.core.trigger.Webhook
+    key: secret-key-123  # You will use this key in your React Code

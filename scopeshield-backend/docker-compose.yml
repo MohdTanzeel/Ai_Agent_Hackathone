@@ -1,0 +1,21 @@
+version: "3"
+
+volumes:
+  postgres-data:
+  kestra-data:
+
+services:
+  kestra:
+    image: kestra/kestra:latest
+    pull_policy: always
+    ports:
+      - "8080:8080"  # This is the port your React app will talk to
+    environment:
+      KESTRA_CONFIGURATION: |
+        kestra:
+          server:
+            basic-auth:
+              enabled: false # Disabled for hackathon speed (be careful in prod!)
+    volumes:
+      - kestra-data:/app/storage
+      - /var/run/docker.sock:/var/run/docker.sock
